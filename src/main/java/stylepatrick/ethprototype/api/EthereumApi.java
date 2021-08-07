@@ -26,7 +26,6 @@ public class EthereumApi {
     public BigDecimal ethBalance(
             @PathVariable(value = "ethAddress") String ethAddress
     ) {
-        ethereumClient.getTokenBalance("0x0780b7bf5ca2516f9b68fcaab9dd8e301b4573c1", "0xcdb9d30a3ba48cdfcb0ecbe19317e6cf783672f1");
         return ethereumClient.getEthBalance(ethAddress);
     }
 
